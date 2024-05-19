@@ -104,7 +104,7 @@ public class Persona
 	//To String
 	@Override
 	public String toString() {
-		return "" + nombre + " " + apellido + " " + domicilio + "" + DNI + " " + pareja;
+		return "" + nombre + " " + apellido;
 	}
 	
 }
