@@ -17,7 +17,7 @@ public class Domicilio
 		this.ciudad = "";
 	}
 	
-	//Constructor parametrizado
+	//Constructor parametrizado (usado en CuentaBancaria punto 9)
 	public Domicilio(String calle, int numero, String ciudad) 
 	{
 		this.calle = calle;

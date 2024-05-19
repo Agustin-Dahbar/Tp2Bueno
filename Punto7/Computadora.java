@@ -8,7 +8,6 @@ public class Computadora
 	private Procesador procesador;
 	private LectoraDVD lectora;
 	
-	
 	//Metodos
 	public void prender() 
 	{

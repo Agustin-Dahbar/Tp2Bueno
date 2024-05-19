@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Program 
 {
-	
 	public static void main(String[] args) 
 	{	
 		Scanner scanner = new Scanner(System.in);
@@ -31,14 +30,9 @@ public class Program
 				System.out.println("Valor incorrecto. Entre 0 y 10. Reingresalo.");
 			}
 		}
-		
 		//Una vez salidos del while significa que se ingreso -1.
-		
 		double promedioFinal = promedio.obtenerValor();
 		
 		System.out.println("El promedio es " + promedioFinal);
-		
 	}
-		
-	
 }

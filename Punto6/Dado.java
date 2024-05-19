@@ -33,7 +33,7 @@ public class Dado
 	//Metodo que lanza el dado y le generá un valor aleatorio.
 	public int lanzar() 
 	{
-		valor = (int)(Math.random() * 6 + 1); 
-		return valor;
+		this.valor = (int)(Math.random() * 6 + 1); 
+		return this.valor;
 	}
 }

@@ -21,11 +21,12 @@ public class Persona
 		apellido = "";
 	}
 	
-	//Constructor parametrizado.
-	public Persona(String nombre, String apellido) 
+	//Constructor pedido por la CuentaBancaria en el punto 9.
+	public Persona(String nombre, String apellido, int DNI) 
 	{
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.DNI = DNI;
 	}
 	
 	//Constructor usado para crear titulares de la cuenta bancaria. Punto9

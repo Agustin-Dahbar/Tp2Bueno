@@ -18,17 +18,11 @@ public class CuentaBancaria
 		this.CBU = generarCBU();
 	}
 	
-	@Override
-	public String toString() {
-		return "CuentaBancaria [CBU=" + CBU + ", tipo=" + tipo + ", saldo=" + saldo + ", titular=" + titular + "]";
-	}
-
 	//Metodo que genera el CBU
 	public String generarCBU() 
 	{
 		return (this.tipo.ordinal() + 10) + "-" + this.titular.obtenerDNI() + "-" + (this.titular.obtenerDNI() % 10);
 	}
-	
 	
 	//Acciones de la cuenta
 	public double obtenerSaldo() 
@@ -44,6 +38,11 @@ public class CuentaBancaria
 	public void extraer(int extraccion) 
 	{
 		this.saldo -= extraccion;
+	}
+	
+	@Override
+	public String toString() {
+		return "CuentaBancaria [CBU=" + CBU + ", tipo=" + tipo + ", saldo=" + saldo + ", titular=" + titular + "]";
 	}
 	
 }
