@@ -4,9 +4,10 @@ public class TarjetaDeCredito
 {
 	private String numero;
 	private String titular;
-	private int limite;
-	private int acumuladoActual;
+	private double limite;
+	private double acumuladoActual;
 	
+	//Constructor.
 	public TarjetaDeCredito(String numero, String titular, int limite) 
 	{
 		this.numero = numero;
@@ -14,20 +15,7 @@ public class TarjetaDeCredito
 		this.limite = limite;
 	}
 	
-	//Metodos averiguamos nuestro saldo disponible.
-	public int montoDisponible()
-	{
-		if(acumuladoActual > limite) 
-		{
-			int montoDisponible = 0;
-			return montoDisponible;
-		}
-		
-		int montoDisponible = this.limite - this.acumuladoActual;
-		return montoDisponible;
-	}
-	
-	//Averiguamos si podemos gastar lo recibido o excede el limite
+	//Averiguamos si podemos gastar lo recibido o excede el límite.
 	private boolean compraPosible(int monto) 
 	{
 		if(monto > limite) 
@@ -41,17 +29,24 @@ public class TarjetaDeCredito
 		}
 	}
 	
-	//Actualizamos el limite
-	public void actualizarLimite(int nuevoLimite) //Lo mismo que el setter creado anteriormente. (Línea 82)
-	{
-		this.limite = nuevoLimite;
-	}
-	
 	//Metodo para sumar lo gastado hasta ahora
 	private void acumularGastoActual(int gasto) 
 	{
-		acumuladoActual += gasto;
+		this.acumuladoActual += gasto;
 	}
+	
+	//Metodos averiguamos nuestro saldo disponible.
+	public double montoDisponible()
+	{
+		if(acumuladoActual > limite) 
+		{
+			double montoDisponible = 0;
+			return montoDisponible;
+		}
+		
+		double montoDisponible = this.limite - this.acumuladoActual;
+		return montoDisponible;
+	}	
 	
 	//Metodo para averiguar si se puede realizar la compra
 	public boolean realizarCompra(int monto) 
@@ -64,6 +59,12 @@ public class TarjetaDeCredito
 		{
 			return false;
 		}
+	}
+	
+	//Actualizamos el limite
+	public void actualizarLimite(int nuevoLimite) //Lo mismo que el setter creado anteriormente. (Línea 82)
+	{
+		this.limite = nuevoLimite;
 	}
 	
 	@Override
@@ -83,12 +84,12 @@ public class TarjetaDeCredito
 		return titular;
 	}
 	
-	public int getLimite() 
+	public double getLimite() 
 	{
 		return limite;
 	}
 	
-	public int getAcumuladoActual() 
+	public double getAcumuladoActual() 
 	{
 		return acumuladoActual;
 	}

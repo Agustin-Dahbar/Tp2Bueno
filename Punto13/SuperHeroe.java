@@ -17,7 +17,7 @@ public class SuperHeroe
 		setSuperpoderes(superpoderes);
 	}
 	
-	//Setters
+	//Setters (los int tendrán composición de metodos para no tener que repetir la misma lógica desarrollada en los 3 de ellos.
 	public void setNombre(String nombre) 
 	{
 		this.nombre = nombre;
@@ -46,7 +46,7 @@ public class SuperHeroe
 		{
 			return 0;
 		}
-		if(numero > 100) 
+		else if(numero > 100) 
 		{
 			return 100;
 		}
@@ -105,7 +105,7 @@ public class SuperHeroe
 	//ToString
 	@Override
 	public String toString() {
-		return "SuperHeroe [nombre=" + nombre + ", fuerza=" + fuerza + ", resistencia=" + resistencia
+		return "SuperHeroe [" + nombre + ", fuerza=" + fuerza + ", resistencia=" + resistencia
 				+ ", superpoderes=" + superpoderes + "]";
 	}
 	

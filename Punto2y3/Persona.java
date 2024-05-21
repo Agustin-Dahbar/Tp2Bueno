@@ -21,6 +21,12 @@ public class Persona
 		apellido = "";
 	}
 	
+	public Persona(String nombre, String apellido) 
+	{
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+	
 	//Constructor pedido por la CuentaBancaria en el punto 9.
 	public Persona(String nombre, String apellido, int DNI) 
 	{

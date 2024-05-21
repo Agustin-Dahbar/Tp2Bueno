@@ -14,7 +14,7 @@ public class Calculadora
 		return a * b;
 	}
 	
-	public double dividir (int a, int b) {
+	public int dividir (int a, int b) {
 		
 		if(b != 0) 
 		{

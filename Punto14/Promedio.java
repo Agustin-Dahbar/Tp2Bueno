@@ -14,20 +14,20 @@ public class Promedio
 	//Incremetamos el valor de los atributos para poder sacar el promedio y obtener el valor de la clase actual.
 	public void incrementar(int valor) 
 	{
-		acumulador.incrementarSuValor(valor);
-		contador.incrementarValor();
+		this.acumulador.incrementarValor(valor);
+		this.contador.incrementarValor();
 	}
 	
 	//Obtenemos el valor del promedio.
 	public double obtenerValor() 
 	{
-		if(contador.obtenerValor() == 0) //Si el contador es 0 (nunca se ejecutó el metodo anterior y se empezó por este)
+		if(this.contador.obtenerValor() == 0) //Si el contador es 0 (nunca se ejecutó el metodo anterior y se empezó por este)
 		{
 			return 0;
 		}
 		else //Si no obtenemos el promedio.
 		{
-			return (double)  acumulador.obtenerValor() / contador.obtenerValor();
+			return (double)  this.acumulador.obtenerValor() / this.contador.obtenerValor();
 		}
 	}
 }

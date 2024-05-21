@@ -7,13 +7,13 @@ public class Turnera
 	//Constructor por defecto.
 	public Turnera() 
 	{
-		valor = 0;
+		this.valor = 0;
 	}
 
 	//Aumenta un valor al atributo
 	public void otorgarProximoNumero() 
 	{
-		valor++;
+		this.valor++;
 	}
 	
 	//Settea el atributo siempre en 0.
