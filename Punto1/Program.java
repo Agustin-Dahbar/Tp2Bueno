@@ -6,7 +6,7 @@ public class Program
 {
 	public static void main(String[] args) 
 	{
-		Operaciones operaciones = new Operaciones();
+		Ejercicio1 operaciones = new Ejercicio1();
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Dame dos numeros, los sumaré");
@@ -18,23 +18,23 @@ public class Program
 		
 		System.out.println(); //Separación
 		
+		//Ingresar los límites para el segundo metodo.
+		System.out.println("Ingrese el límite mínimo:");
+        int min = scanner.nextInt();
+        System.out.println("Ingrese el límite máximo:");
+        int max = scanner.nextInt();
 
-		//Instrucción para el siguiente metodo
-		System.out.println("Indica mediante dos números límites para una amplia selección de números.");
-		a = scanner.nextInt();
-		b = scanner.nextInt();
-		
-		//Indicamos que el primer numero debe ser menor para que sea posible el programa.
-		while(a >= b) 
-		{
-			System.out.println("El primer número debe ser menor al segundo. Reintentalo.");
-			a = scanner.nextInt();
-			b = scanner.nextInt();
-		}
-		
-		int numero = operaciones.pedirNumero("Ahora selecciona un número comprendido entre dicho límite.", a, b);
-		
-		//Devolvemos el número seleccionado.
-		System.out.println("El número seleccionado fue " + numero);
+        // Llamamos al método para obtener un número aleatorio dentro de los límites dados y lo devolvemos.
+        int numero = operaciones.pedirNumero("Generando un número aleatorio entre " + min + " y " + max, min, max);
+        System.out.println("El número aleatorio generado es: " + numero);
+        
+        
+        //METODO EXTRA. PROGRAMACIÓN LIBRE.
+        System.out.println("Mismo ejercicio que recién pero excluyendo los límites. Llama a la función con los dos metodos.");
+    	int numero2 = operaciones.pedirNumeroSinLimites(10, 15);
+    	System.out.println("");
+    	System.out.println("El número generado entre los límites brindados fue " + numero2); //Devuelve exitosamente lo pedido
+        
+        
 	}
 }
