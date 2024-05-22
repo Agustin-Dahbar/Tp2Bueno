@@ -18,22 +18,22 @@ public class SuperHeroe
 	}
 	
 	//Setters (los int tendrán composición de metodos para no tener que repetir la misma lógica desarrollada en los 3 de ellos.
-	public void setNombre(String nombre) 
+	private void setNombre(String nombre) 
 	{
 		this.nombre = nombre;
 	}
 	
-	public void setFuerza(int numero) 
+	private void setFuerza(int numero) 
 	{
 		this.fuerza = validarDatos(numero);
 	}
 	
-	public void setResistencia(int numero) 
+	private void setResistencia(int numero) 
 	{
 		this.resistencia = validarDatos(numero);
 	}
 	
-	public void setSuperpoderes(int numero) 
+	private void setSuperpoderes(int numero) 
 	{
 		this.superpoderes = validarDatos(numero);
 	}

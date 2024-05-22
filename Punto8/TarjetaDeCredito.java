@@ -8,7 +8,7 @@ public class TarjetaDeCredito
 	private double acumuladoActual;
 	
 	//Constructor.
-	public TarjetaDeCredito(String numero, String titular, int limite) 
+	public TarjetaDeCredito(String numero, String titular, double limite) 
 	{
 		this.numero = numero;
 		this.titular = titular;
@@ -53,6 +53,7 @@ public class TarjetaDeCredito
 	{
 		if(compraPosible(monto))  //Usamos el metodo booleano que declaramos anteriormente que utiliza la misma lógica pedida en este caso.
 		{
+			acumularGastoActual(monto); //Actualizamos los atributos que debemos actualizar al realizar la compra.
 			return true;
 		}
 		else 
@@ -96,17 +97,17 @@ public class TarjetaDeCredito
 	
 	//Setters
 	
-	public void setNumero(String numero) 
+	private void setNumero(String numero) 
 	{
 		this.numero = numero;
 	}
 	
-	public void setTitulat(String titular) 
+	private void setTitular(String titular) 
 	{
 		this.titular = titular;
 	}
 	
-	public void setLimite(int limite) 
+	private void setLimite(int limite) 
 	{
 		this.limite = limite;
 	}
