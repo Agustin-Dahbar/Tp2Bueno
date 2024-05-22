@@ -22,11 +22,8 @@ public class TarjetaDeCredito
 		{
 			return false;
 		}
-		else 
-		{
 			this.acumuladoActual += monto;
 			return true;
-		}
 	}
 	
 	//Metodo para sumar lo gastado hasta ahora
@@ -56,10 +53,8 @@ public class TarjetaDeCredito
 			acumularGastoActual(monto); //Actualizamos los atributos que debemos actualizar al realizar la compra.
 			return true;
 		}
-		else 
-		{
+
 			return false;
-		}
 	}
 	
 	//Actualizamos el limite

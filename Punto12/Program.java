@@ -15,8 +15,8 @@ public class Program
 		System.out.println(calculadora.multiplicar(a, b)); //2
 		System.out.println(calculadora.dividir(a, b)); // 0
 		System.out.println(calculadora.dividir(b, a)); // 2
-		calculadora.dividir(a, 0); //0
-		calculadora.dividir(b, 0); // 0
+		calculadora.dividir(a, 0); // "No se puede dividor por 0"
+		calculadora.dividir(b, 0); // "No se puede dividor por 0"
 		System.out.println(calculadora.dividir(0, a)); // 0
 		System.out.println(calculadora.dividir(0, b)); //0
 		

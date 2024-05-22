@@ -18,7 +18,7 @@ public class Test{
 	//Evaluamos cual cayó con un valor mayor.
 	if(valorUno == valorDos) 
 	{
-		System.out.println("Los dados tuvieron con el mismo valor de " + valorUno);
+		System.out.println("Los dados tuvieron el mismo valor (" + valorUno + ").");
 	}
 	else if(valorUno > valorDos)
 	{

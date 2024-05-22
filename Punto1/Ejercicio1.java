@@ -29,20 +29,4 @@ public class Ejercicio1
         return numeroAleatorio;
     }
     
- // Método para pedir al usuario los límites y devolver un número aleatorio entre ellos, excluyendolos.
-    public int pedirNumeroSinLimites(int min, int max) {
-        if (min >= max - 1) 
-        {
-        	// Si no hay espacio para un número entre los límites, lanzamos una excepción
-            throw new IllegalArgumentException("No hay números entre " + min + " y " + max);  
-        }
-        else 
-        {
-        	 int numeroAleatorio = (int)(Math.random() * (max - min - 1)) + min + 1; //num aleatorio excluyedo límites.
-             return numeroAleatorio;
-        }
-        
-       
-    }
-    
 }

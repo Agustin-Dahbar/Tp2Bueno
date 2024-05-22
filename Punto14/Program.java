@@ -25,7 +25,7 @@ public class Program
 			{
 				promedio.incrementar(nota);
 			}
-			else if(nota != 1) //Con esta condición evitamos esta impresión innecesaria al cancelar el programa con un -1.
+			else if(nota != -1) //Con esta condición evitamos esta impresión innecesaria al cancelar el programa con un -1.
 			{
 				System.out.println("Valor incorrecto. Entre 0 y 10. Reingresalo.");
 			}
