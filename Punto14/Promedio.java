@@ -25,9 +25,7 @@ public class Promedio
 		{
 			return 0;
 		}
-		else //Si no obtenemos el promedio.
-		{
 			return (double)  this.acumulador.obtenerValor() / this.contador.obtenerValor();
-		}
+		
 	}
 }

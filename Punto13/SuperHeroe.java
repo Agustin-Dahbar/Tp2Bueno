@@ -6,6 +6,8 @@ public class SuperHeroe
 	private int fuerza;
 	private int resistencia;
 	private int superpoderes;
+	final int MAXIMO = 100;
+	final int MINIMO = 0;
 	
 	//Constructor que ya que tiene que validar datos para 3 de las 4 propiedades, utiliza metodos que realizan dicho procedimiento mediante el 
 	//encapsulamiento de otro metodo base para validar los datos (línea 43)
@@ -42,11 +44,11 @@ public class SuperHeroe
 	//Validamos que los argumentos númericos sean correctos con este metodo. Lo incorporaremos en todos los setters.
 	public int validarDatos(int numero) 
 	{
-		if(numero < 0) 
+		if(numero < MINIMO) 
 		{
 			return 0;
 		}
-		else if(numero > 100) 
+		else if(numero > MAXIMO) 
 		{
 			return 100;
 		}
@@ -57,7 +59,7 @@ public class SuperHeroe
 	}
 
 	//Competir entre superheroes
-	public void competir(SuperHeroe rival) 
+	public Resultado competir(SuperHeroe rival) 
 	{
 		int triunfosProta = 0;
 		int triunfosRival = 0;
@@ -92,12 +94,15 @@ public class SuperHeroe
 			
 		if(triunfosProta >= 2) 
 		{
-			System.out.println("TRIUNFO");
+			return Resultado.TRIUNFO;
 		}
 		else if(triunfosRival >= 2) 
 		{
-			System.out.println("DERROTA");
+			return Resultado.DERROTA;
 		}
+		
+			return Resultado.EMPATE;
+		
 	}
 	
 	
