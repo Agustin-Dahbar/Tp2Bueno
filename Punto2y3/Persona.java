@@ -78,10 +78,7 @@ public class Persona
 		{
 			System.out.println("No tiene domicilio");
 		}
-		else 
-		{
 			System.out.println(domicilio);
-		}
 	}
 	
 	public void trabajar() 

@@ -18,10 +18,9 @@ public class Dado
 		{
 			this.valor = valor;
 		}
-		else 
-		{
-			this.valor = 1; //Si no se indica un numero correcto, lo setteamos en 1.
-		}
+		
+		this.valor = 1; //Si no se indica un numero correcto, lo setteamos en 1.
+		
 	}
 	
 	//Metodo para obtener el valor

@@ -20,10 +20,7 @@ public class Calculadora
 		{
 			return a / b;
 		}
-		else 
-		{
 			System.out.println("No se puede dividor por 0");
 			return 0;
-		}
 	}
 }

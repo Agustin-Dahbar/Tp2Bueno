@@ -10,9 +10,6 @@ public class LectoraDVD
 		{
 			return true;
 		}
-		else 
-		{
 			return false;
-		}
 	}
 }

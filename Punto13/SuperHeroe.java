@@ -64,34 +64,26 @@ public class SuperHeroe
 		int triunfosProta = 0;
 		int triunfosRival = 0;
 		
+		//Evaluamos quien gana en los atributos
 		if(this.fuerza > rival.fuerza)
 		{
 			triunfosProta++;
 		}
-		else 
-		{
 			triunfosRival++;
-		}
 		
 		if(this.resistencia> rival.resistencia)
 		{
 			triunfosProta++;
 		}
-		else 
-		{
 			triunfosRival++;
-		}
 		
 		if(this.superpoderes> rival.superpoderes)
 		{
 			triunfosProta++;
 		}
-		else 
-		{
 			triunfosRival++;
-		}
 		
-			
+		//Evaluamos quien ganó en en mejor de 3.
 		if(triunfosProta >= 2) 
 		{
 			return Resultado.TRIUNFO;
@@ -102,11 +94,8 @@ public class SuperHeroe
 		}
 		
 			return Resultado.EMPATE;
-		
 	}
-	
-	
-	
+
 	//ToString
 	@Override
 	public String toString() {

@@ -24,10 +24,9 @@ public class Test{
 	{
 		System.out.println("El mayor valor fue " + valorUno);
 	}
-	else 
-	{
+
 		System.out.println("El mayor valor fue " + valorDos);
-	}
+
 	
 	
 	
@@ -63,10 +62,8 @@ public class Test{
 	{
 		System.out.println("El dado uno tuvo mayor promedio con un valor de " + promedioUno);
 	}
-	else 
-	{
+	
 		System.out.println("El dado uno tuvo mayor promedio con un valor de " + promedioDos);
-	}
 	
 	
 	
