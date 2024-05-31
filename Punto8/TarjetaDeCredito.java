@@ -105,6 +105,6 @@ public class TarjetaDeCredito
 	@Override
 	public String toString() {
 		return "TarjetaDeCredito [Numero = " + this.numero + ", Titular = " + this.titular + ", Limite = " + this.limite
-				+ ", Monto disponible = " + this.montoDisponible() + " Acumulado actual = " + this.acumuladoActual + "]";
+				+ ", Monto Disponible = " + this.montoDisponible() + " Acumulado Actual = " + this.acumuladoActual + "]";
 	}
 }

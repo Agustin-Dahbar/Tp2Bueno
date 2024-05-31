@@ -11,8 +11,6 @@ public class Persona
 	private int DNI;
 	private Domicilio domicilio; //5B)
 	private Computadora computadora; //7)
-	private Persona pareja;
-	
 	
 	//Constructor por defecto
 	public Persona() 
@@ -64,11 +62,7 @@ public class Persona
 	{
 		this.DNI = dni;
 	}
-	
-	public void setPareja(Persona pareja) 
-	{
-			this.pareja = pareja;	
-	}
+
 	
 	//5C)
 	//"Getter" sin return. Ya que en el caso de que sea null debemos devolver un mensaje debemos usar void ya que no podremos retornar un objeto Domicilio en ese caso.
@@ -103,12 +97,10 @@ public class Persona
 	}
 	
 	
-	
-	
 	//To String
 	@Override
 	public String toString() {
-		return "" + nombre + " " + apellido;
+		return "" + this.nombre + " " + this.apellido + " " + this.domicilio + " " + DNI;
 	}
 	
 }

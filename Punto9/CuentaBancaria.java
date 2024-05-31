@@ -42,7 +42,7 @@ public class CuentaBancaria
 	
 	@Override
 	public String toString() {
-		return "CuentaBancaria [CBU=" + CBU + ", tipo=" + tipo + ", saldo=" + saldo + ", titular=" + titular + "]";
+		return "CuentaBancaria [CBU = " + this.CBU + ", Tipo = " + this.tipo + ", Saldo = " + this.saldo + ", Titular = " + this.titular + "]";
 	}
 	
 }

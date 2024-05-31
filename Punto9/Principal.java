@@ -11,13 +11,9 @@ public class Principal
 		Persona fulano = new Persona("Fulano", "Gomez", 12345678, domicilioPareja);
 		Persona mengana = new Persona("Mengana", "Torres", 9123456, domicilioPareja);
 		
-		//fulano.setPareja(mengana); 
-		//mengana.setPareja(fulano);
-	
-		
 		CuentaBancaria cuentaFulano = new CuentaBancaria(TipoCuenta.CAJA_AHORRO, 10000, fulano);
-		
 		CuentaBancaria cuentaMengana = new CuentaBancaria(TipoCuenta.CUENTA_CORRIENTE, 10000, mengana);		
+		
 		System.out.println(cuentaFulano);
 		System.out.println(cuentaMengana);
 	}
