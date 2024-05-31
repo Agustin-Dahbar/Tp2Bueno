@@ -7,15 +7,23 @@ public class Test
 		SuperHeroe batman = new SuperHeroe("Batman", 90, 70, 0);
 		SuperHeroe superman = new SuperHeroe("Superman", 95, 60, 70);
 
-		batman.competir(superman);
-		superman.competir(batman);
+		System.out.println(batman.competir(superman));
+		System.out.println(superman.competir(batman));
 		
-		//Creamos mas superheroes
+		//Creamos más superheroes
 		SuperHeroe john = new SuperHeroe("John Marston", 100, 100, 100);
 		SuperHeroe edgar = new SuperHeroe("Edgar Ross", 0, 0, 0);
 		
-		john.competir(edgar); 
-		batman.competir(john);
-		john.competir(superman);
+		System.out.println(john.competir(edgar));
+		System.out.println(batman.competir(john));
+		System.out.println(john.competir(superman));
+		
+		//Discipulo vs maestro
+		SuperHeroe ruben = new SuperHeroe("Ruben Gutierrez", 100, 100, 99);
+		SuperHeroe yo = new SuperHeroe("Agustin Dahbar", 100, 100, 98);
+		
+		System.out.println(yo.competir(ruben)); //Estuvo cerca.
 	}
 }
+
+
