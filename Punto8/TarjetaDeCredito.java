@@ -17,14 +17,14 @@ public class TarjetaDeCredito
 	
 	//Averiguamos si podemos gastar lo recibido o excede el límite.
 	private boolean compraPosible(int monto) 
-	{
-		if(monto > limite) 
-		{
-			return false;
-		}
-			this.acumuladoActual += monto;
-			return true;
-	}
+    {
+        if(this.acumuladoActual + monto <= limite) 
+        {
+        	return true;
+        }
+        
+        return false;
+    }
 	
 	//Metodo para sumar lo gastado hasta ahora
 	private void acumularGastoActual(int gasto) 
@@ -61,12 +61,6 @@ public class TarjetaDeCredito
 	public void actualizarLimite(int nuevoLimite) //Lo mismo que el setter creado anteriormente. (Línea 82)
 	{
 		this.limite = nuevoLimite;
-	}
-	
-	@Override
-	public String toString() {
-		return "TarjetaDeCredito [numero=" + numero + ", titular=" + titular + ", limite=" + limite
-				+ ", acumuladoActual=" + montoDisponible() + "]";
 	}
 
 	//Getters
@@ -105,5 +99,12 @@ public class TarjetaDeCredito
 	private void setLimite(int limite) 
 	{
 		this.limite = limite;
+	}
+	
+	//ToString
+	@Override
+	public String toString() {
+		return "TarjetaDeCredito [Numero = " + this.numero + ", Titular = " + this.titular + ", Limite = " + this.limite
+				+ ", Monto disponible = " + this.montoDisponible() + " Acumulado actual = " + this.acumuladoActual + "]";
 	}
 }
