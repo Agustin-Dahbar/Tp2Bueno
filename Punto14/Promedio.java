@@ -2,7 +2,7 @@ package Punto14;
 
 public class Promedio 
 {
-	private  Acumulador acumulador;
+	private Acumulador acumulador;
 	private Contador contador;
 	
 	public Promedio(Acumulador acumulador, Contador contador) 
@@ -23,9 +23,10 @@ public class Promedio
 	{
 		if(this.contador.obtenerValor() == 0) //Si el contador es 0 (nunca se ejecutó el metodo anterior y se empezó por este)
 		{
+			System.out.println("No se puede dividir por 0. El promedio sera 0.");
 			return 0;
 		}
-			return (double)  this.acumulador.obtenerValor() / this.contador.obtenerValor();
+			return (double) this.acumulador.obtenerValor() / this.contador.obtenerValor();
 		
 	}
 }

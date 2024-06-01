@@ -24,20 +24,30 @@ public class CuentaBancaria
 		return (this.tipo.ordinal() + 10) + "-" + this.titular.obtenerDNI() + "-" + (this.titular.obtenerDNI() % 10);
 	}
 	
-	//Acciones de la cuenta
-	public double obtenerSaldo() 
-	{
-		return saldo;
-	}
 	
 	public void depositar(int deposito) 
 	{
 		this.saldo += deposito;
 	}
 	
-	public void extraer(int extraccion) 
+	public boolean extraer(double extraccion) 
 	{
+		if(extraccion > this.saldo) //Si la extraccion es mayor al saldo que poseemos.. 
+		{
+			System.out.println("No tienes saldo suficiente");
+			return false;
+		}
+		
+		//Si no.. (el saldo es suficiente) 
 		this.saldo -= extraccion;
+		System.out.println("Extraccion realizada");
+		return true;
+	}
+	
+	//Acciones de la cuenta
+	public double obtenerSaldo() 
+	{
+		return saldo;
 	}
 	
 	@Override

@@ -25,16 +25,16 @@ public class Test
 		
 		
 		//5D)
-		Domicilio casaAgustin = new Domicilio("Conesa", 1000, "CABA");
-		yo.setDomicilio(casaAgustin);
+		Domicilio casaFulano = new Domicilio("Conesa", 1000, "CABA");
+		fulano.setDomicilio(casaFulano);
 
 
 		//5E)
-		fulano.setDomicilio(casaAgustin);
+		yo.setDomicilio(casaFulano);
 		
 		
 		//5F)
-		casaAgustin.setNumero(1050);
+		casaFulano.setNumero(1050);
 		
 		//5G
 		System.out.println(yo);

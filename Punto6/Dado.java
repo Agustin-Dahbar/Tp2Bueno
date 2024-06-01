@@ -9,7 +9,7 @@ public class Dado
 	//Constructores
 	public Dado() 
 	{
-		this.valor = 0;
+		this.valor = 1;
 	}
 	
 	public Dado(int valor) 

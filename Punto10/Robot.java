@@ -18,6 +18,6 @@ public class Robot
 	
 	public void saludarPersona(Persona persona) 
 	{
-		System.out.println("Hola " + persona + ", mi nombre es " + nombre + ". ¿En que puedo ayudarte?" );
+		System.out.println("Hola " + persona + ", mi nombre es " + this.nombre + ". ¿En que puedo ayudarte?" );
 	}
 }

@@ -24,8 +24,12 @@ public class Test{
 	{
 		System.out.println("El mayor valor fue " + valorUno);
 	}
-
+	else 
+	{
 		System.out.println("El mayor valor fue " + valorDos);
+	}
+
+		
 
 	
 	
@@ -41,7 +45,7 @@ public class Test{
 	
 	double promedioUno = sumaTotal / 100.0;
 	
-	System.out.println(promedioUno);
+	System.out.println("El promedio del dado uno es " + promedioUno);
 	
 	//Realizamos 100 lanzamientos con el dado dos.
 	int sumaTotalDos = 0;
@@ -53,7 +57,7 @@ public class Test{
 	}
 	
 	double promedioDos = sumaTotalDos / 100.0;
-	System.out.println(promedioDos);
+	System.out.println("El promedio del dado dos es " + promedioDos);
 	
 	
 	
@@ -63,7 +67,7 @@ public class Test{
 		System.out.println("El dado uno tuvo mayor promedio con un valor de " + promedioUno);
 	}
 	
-		System.out.println("El dado uno tuvo mayor promedio con un valor de " + promedioDos);
+		System.out.println("El dado dos tuvo mayor promedio con un valor de " + promedioDos);
 	
 	
 	
