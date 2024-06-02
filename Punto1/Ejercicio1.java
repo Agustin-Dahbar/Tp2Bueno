@@ -17,15 +17,6 @@ public class Ejercicio1
     {
     	System.out.println(texto);
     	
-    	while(!(min < max )) 
-    	{
-    		System.out.println("El primer numero debe ser menor. Reintentalo.");
-    		min = scanner.nextInt();
-    		max = scanner.nextInt();
-    	}
-    	
-    	System.out.println("Generando un numero aleatorio entre " + min + " y " + max);
-    	
         // Generamos un número aleatorio entre min (inclusive) y max (inclusive)
         int numeroAleatorio = (int)(Math.random() * (max - min + 1)) + min;
         

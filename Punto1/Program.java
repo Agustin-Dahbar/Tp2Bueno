@@ -19,13 +19,13 @@ public class Program
 		System.out.println(); //Separación
 		
 		//Ingresar los límites para el segundo metodo.
-		System.out.println("Ingrese el límite minimo:");
+		System.out.println("Ingrese el primer limite:");
         int min = scanner.nextInt();
         
-        System.out.println("Ingrese el límite maximo:");
+        System.out.println("Ingrese el segundo limite: ");
         int max = scanner.nextInt();
 
         // Imprimimos el llamado al método para obtener un número aleatorio dentro de los límites dados.
-        System.out.println(operaciones.pedirNumero("Validando los limites...", min, max));
+        System.out.println(operaciones.pedirNumero("Generando un numero aleatorio entre " + min + " y " + max, min, max));
 	}
 }
