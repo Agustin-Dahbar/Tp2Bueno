@@ -13,12 +13,12 @@ public class Ejercicio1
 	}
 	
 	// Método para pedir al usuario los límites y devolver un número aleatorio entre ellos
-    public int pedirNumero(String texto, int min, int max) 
+    public int pedirNumero(String texto, int num1, int num2) 
     {
     	System.out.println(texto);
     	
         // Generamos un número aleatorio entre min (inclusive) y max (inclusive)
-        int numeroAleatorio = (int)(Math.random() * (max - min + 1)) + min;
+        int numeroAleatorio = (int)(Math.random() * (num1 - num2 + 1)) + num1;
         
         return numeroAleatorio;
     }
